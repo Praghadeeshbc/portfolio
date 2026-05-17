@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Praghadeesh S, Backend Engineer, Go Developer, and Java Developer.">
+    <title>Praghadeesh S | Backend Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Praghadeesh<span class="highlight">.dev</span></div>
+        <ul class="nav-links">
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions" style="display: flex; align-items: center; gap: 1.5rem;">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <svg class="moon-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg class="sun-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <p class="greeting">Hi, I am</p>
+            <h1 class="name">Praghadeesh S</h1>
+            <h2 class="title">
+                <span class="typewriter-text"></span>
+            </h2>
+
+            <p class="summary">
+                Backend Engineer with over 3.6 years of experience building scalable, production-grade backend systems
+                and distributed services. Specialized in microservices, API design, and performance optimization in
+                high-throughput environments.
+            </p>
+            <div class="cta-buttons">
+                <a href="#experience" class="btn primary-btn">View My Work</a>
+                <a href="resume.pdf" target="_blank" class="btn secondary-btn">View Resume</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-graphics">
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre><code><span class="keyword">package</span> main
+
+<span class="keyword">import</span> <span class="string">"fmt"</span>
+
+<span class="keyword">func</span> <span class="func">main</span>() {
+    fmt.<span class="func">Println</span>(<span class="string">"Building scalable systems!"</span>)
+}</code></pre>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <!-- Samsung SDE 1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Software Developer Engineer (SDE - 1)</h3>
+                    <h4>Samsung – Chennai</h4>
+                    <span class="date">Aug 2022 – Present</span>
+                    <ul>
+                        <li>Designed a highly scalable Go-based data pipeline managing <strong>1M+ records/day</strong>
+                            across 15 microservices for a global e-commerce platform.</li>
+                        <li>Slashed pricing update latency by <strong>80%</strong> by implementing custom deduplication
+                            logic to eliminate redundant API calls.</li>
+                        <li>Boosted request throughput by <strong>25%</strong> by migrating the API routing layer to the
+                            Gin framework for enhanced middleware efficiency.</li>
+                        <li>Accelerated real-time data processing by <strong>15%</strong> using Go's concurrency model
+                            (goroutines/channels) for plugin execution.</li>
+                        <li>Engineered resilient backend plugins (API batchers, RabbitMQ serializers) to standardize
+                            distributed messaging and observability.</li>
+                        <li>Strengthened B2B data ingestion, supporting 6000+ SKUs per file and decreasing bulk upload
+                            failure rates by <strong>30%</strong>.</li>
+                        <li>Improved order tracking accuracy by <strong>70%</strong> via seamless EDI integrations with
+                            FedEx, UPS, and PitneyBowes.</li>
+                        <li>Minimized false positives by <strong>20%</strong> in the Fraud microservice through
+                            integration with Signifyd's Decision Center and custom fraud policies.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Samsung Intern -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Software Engineer Intern</h3>
+                    <h4>Samsung</h4>
+                    <span class="date">Mar 2022 – Jul 2022</span>
+                    <ul>
+                        <li>Built a low-latency product recommendation engine using MLP, achieving a loss of just
+                            0.0018.</li>
+                        <li>Designed a Solana-based crypto payment prototype using Node.js and web3 libraries for secure
+                            transactions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TBS Intern -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Backend Intern</h3>
+                    <h4>TBS</h4>
+                    <span class="date">Dec 2020 – Jan 2021</span>
+                    <ul>
+                        <li>Built 2 IoT devices using Arduino Uno to monitor and transmit power usage data from medical
+                            equipment with 95%+ accuracy, enabling proactive energy management.</li>
+                        <li>Developed a Node.js-based application to ingest, store, and visualize IoT data in real-time
+                            with less than 1s latency.</li>
+                        <li>Created a blockchain-backed system for recording patient medical history using Ethereum
+                            smart contracts.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="timeline-item">
+                <div class="timeline-dot" style="background: var(--accent-purple); box-shadow: 0 0 10px var(--accent-purple);"></div>
+                <div class="timeline-content">
+                    <h3>B.Tech in Information Technology</h3>
+                    <h4>College of Engineering, Guindy, Anna University</h4>
+                    <span class="date">2018 – 2022</span>
+                    <ul>
+                        <li>Graduated with Distinction, specializing in backend architectures and software engineering.</li>
+                        <li>Led planning and execution of <strong>"Itrix,"</strong> a national-level technical symposium.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <h2 class="section-title">Achievements</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🏆</div>
+                <h3>Runner-up, Samsung Hackathon 2025</h3>
+                <p>Built a voice-enabled AI customer support assistant using Whisper (STT), LLaMA-3, and Eleven Labs
+                    (TTS), enabling automated resolution of customer queries via context-aware responses.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🥈</div>
+                <h3>Runner-up, Samsung Hackathon 2023</h3>
+                <p>Optimized pricing pipeline, boosting system efficiency and reliability for large-scale data
+                    ingestion.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏅</div>
+                <h3>Samsung Excellence Award</h3>
+                <p>Awarded for end-to-end ownership and successful delivery of a high-reliability backend data pipeline
+                    service.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧑‍🤝‍🧑</div>
+                <h3>Event Leadership</h3>
+                <p>Led planning and execution of "Itrix," a national-level technical fest with 1,000+ attendees.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>SMS-ME</h3>
+                <p><strong>Stack: IoT, NodeJs, MongoDB, Flutter, Solidity</strong><br>An IoT based project that monitors
+                    power consumption of medical equipment. Features a Web App for data visualization, and patient
+                    details are securely stored using Blockchain.</p>
+                <a href="https://github.com/Praghadeeshbc/SMS_ME" target="_blank" class="project-link"><i
+                        class="fab fa-github"></i> View Code</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">📦</div>
+                <h3>DeliverMe</h3>
+                <p><strong>Stack: NodeJs, ExpressJS, Bootstrap, MySQL</strong><br>A website that helps in controlling
+                    crowds near shops by assigning a temporary helper to a person who seeks help. The helper is rewarded
+                    for their service.</p>
+                <a href="https://github.com/Praghadeeshbc/DeliverMe" target="_blank" class="project-link"><i
+                        class="fab fa-github"></i> View Code</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">🗝️</div>
+                <h3>Chamber of Secrets</h3>
+                <p><strong>Stack: NodeJs, ExpressJS, HTML/CSS, MongoDB</strong><br>A connection based online game built
+                    for ITRIX’20. Went live with 800+ participants. Features leaderboard, custom questions, and detailed
+                    user management.</p>
+                <a href="https://github.com/Praghadeeshbc/ChamberOfSecrets" target="_blank" class="project-link"><i
+                        class="fab fa-github"></i> View Code</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">⛓️</div>
+                <h3>Solana Payment</h3>
+                <p><strong>Stack: NodeJs, Web3, Solana Blockchain</strong><br>A prototype for crypto payments designed
+                    for secure and fast transactions directly on the Solana blockchain network.</p>
+                <a href="https://github.com/Praghadeeshbc/Solana_payment" target="_blank" class="project-link"><i
+                        class="fab fa-github"></i> View Code</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">💼</div>
+                <h3>App Tracker</h3>
+                <p><strong>Stack: .NET, MySQL, C#</strong><br>Developed an application tracking system for ITC Ltd,
+                    enhancing project tracking and reporting capabilities for freelance work.</p>
+                <a href="#" target="_blank" class="project-link" style="visibility: hidden;"><i
+                        class="fab fa-github"></i> View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="tags">
+                    <span class="tag">Go</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <div class="tags">
+                    <span class="tag">Gin</span>
+                    <span class="tag">Spring Boot</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Databases & Cloud</h3>
+                <div class="tags">
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">AWS (S3)</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Messaging</h3>
+                <div class="tags">
+                    <span class="tag">RabbitMQ</span>
+                    <span class="tag">Kafka</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">ELK Stack</span>
+                    <span class="tag">Prometheus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>I'm always open to discussing backend architecture, scalable systems, or new opportunities.</p>
+        <div class="contact-links">
+            <span class="contact-link" style="cursor: default;">📍 Chennai, Tamil Nadu, India</span>
+            <a href="resume.pdf" target="_blank" class="contact-link">📄 View Resume</a>
+            <a href="mailto:praghadeesh.s12@gmail.com" class="contact-link">📧 praghadeesh.s12@gmail.com</a>
+            <a href="tel:+919994453437" class="contact-link">📞 +91 99944 53437</a>
+            <a href="https://github.com/Praghadeeshbc" target="_blank" class="contact-link">💻 GitHub</a>
+            <a href="https://www.linkedin.com/in/praghadeesh-ssk-38b12b1b4/" target="_blank" class="contact-link">🔗
+                LinkedIn</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Praghadeesh S. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
