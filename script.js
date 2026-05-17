@@ -40,9 +40,15 @@ const navLinks = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    // If we wanted to expand the mobile menu, we would add CSS for .nav-links.active
-    // For simplicity, a basic alert or simple toggle is enough for now, 
-    // but typically we change display property in CSS for .active
+    hamburger.classList.toggle('toggle');
+});
+
+// Close mobile menu when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('toggle');
+    });
 });
 
 // Smooth Scroll for Navigation Links
